@@ -18,6 +18,7 @@
         ]
       }
     ],
+    "max-nesting-depth": 3,
     "order/properties-order": [
       [
       "content",

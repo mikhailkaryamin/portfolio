@@ -8,10 +8,6 @@
       "airbnb",
       "plugin:prettier/recommended"
   ],
-  "globals": {
-      "Atomics": "readonly",
-      "SharedArrayBuffer": "readonly"
-  },
   "parserOptions": {
       "ecmaFeatures": {
           "jsx": true
