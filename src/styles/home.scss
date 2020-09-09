@@ -1,0 +1,46 @@
+.home {
+  position: relative;
+  height: 100vh;
+  min-height: 100vh;
+  padding: 0;
+  padding-top: 110px;
+  background: #000;
+
+
+  .intro {
+    position: relative;
+    z-index: 1;
+    max-width: 540px;
+    margin: auto;
+    text-align: center;
+
+    h1 {
+      color: #fff;
+      font-size: 36px;
+    }
+
+    span {
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+
+  .social-icons {
+    li {
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  .btn-kd {
+    position: relative;
+    transform: perspective(1px) translateZ(0);
+    display: inline-block;
+    color: #fff;
+    background: #ff6347;
+    vertical-align: middle;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+  }
+}
