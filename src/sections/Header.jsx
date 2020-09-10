@@ -4,7 +4,7 @@ import logo from '../assets/icons/logo.svg';
 
 function Header() {
   return (
-    <header className="header">
+    <header className="header fixed-top">
       <Container>
         <Navbar expand="lg" variant="dark">
           <Navbar.Brand href="#">
