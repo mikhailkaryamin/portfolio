@@ -1,0 +1,36 @@
+.about {
+
+  .about__avatar {
+    margin-bottom: 1rem;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  .about__description {
+    padding: 45px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 5px 20px 0 rgba(69,67,96,.1);
+  }
+}
+
+.triangle-left-md {
+  @media only screen and(min-width: 768px) {
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 25%;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-right: 15px solid #fff;
+      border-bottom: 10px solid transparent;
+    }
+  }
+}
+
