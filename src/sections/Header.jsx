@@ -19,7 +19,7 @@ function Header() {
               </a>
             </Nav.Item>
             <Nav.Item as="li">
-              <a href="#" className="nav-link">
+              <a href="#about" className="nav-link">
                 About
               </a>
             </Nav.Item>
