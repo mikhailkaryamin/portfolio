@@ -1,0 +1,25 @@
+section {
+  position: relative;
+  padding-top: 110px;
+  background-color: #f7fafa;
+
+  .section-title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 3rem;
+    margin-left: 14px;
+    font-size: 36px;
+    font-weight: 700;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      display: block;
+      width: 15px;
+      height: 15px;
+      background-color: #ff6347;
+    }
+  }
+}
