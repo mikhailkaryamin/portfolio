@@ -5,9 +5,12 @@ function Section ({id, title, className, children}) {
   return (
     <section className={className} id={id}>
       <Container>
-        <h2 className="section-title">
-          {title}
-        </h2>
+
+        {title && (
+          <h2 className="section-title">
+            {title}
+          </h2>
+        )}
 
         {children}
 
