@@ -1,10 +1,10 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import Section from '../components/Section';
-import ProgressBar from '../components/ProgressBar'
+import Skill from '../components/Skill'
 import avatar from '../assets/icons/avatar.svg'
 
-const PROGRESS_BAR_DATA = [
+const SKILL_DATA = [
   {
     title: 'JavaScript',
     percent: 90,
@@ -34,14 +34,14 @@ const PROGRESS_BAR_DATA = [
 
 function About () {
   return (
-    <Section id="about" title="About me" className="about">
-      <Row>
+    <Section id="about" title="About me">
+      <Row className="about">
         <Col md={3}>
           <div className="about__avatar">
             <img src={avatar} alt="Mikhail Karyamin" />
           </div>
         </Col>
-        <Col md={9} className="triangle-left-md triangle-top-sm">
+        <Col md={9} className="about__content-box">
           <div className="about__description">
             <Row>
               <Col md={6}>
@@ -52,12 +52,13 @@ function About () {
                 </p>
               </Col>
               <Col md={6}>
-                  {PROGRESS_BAR_DATA.map((bar) => {
+                  {SKILL_DATA.map((bar, i) => {
                     return (
-                      <ProgressBar
-                        title={bar.title}
-                        percent={bar.percent}
+                      <Skill
+                        key={`bar.title-${i}`}
                         backgroundColor={bar.color}
+                        percent={bar.percent}
+                        title={bar.title}
                       />
                     )
                   })}
