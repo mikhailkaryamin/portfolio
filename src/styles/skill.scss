@@ -1,7 +1,7 @@
-.progress-item {
+.skill {
   margin-bottom: 1.5rem;
 
-  .progress-item__info {
+  .skill__info {
 
     &::after {
       content: "";
@@ -10,27 +10,38 @@
     }
   }
 
-  .progress-item__headline {
+  .skill__headline {
+    float: left;
     margin-top: 0;
     margin-bottom: 1rem;
     font-size: 16px;
     font-weight: 500;
   }
   
-  .progress-item__percent {
+  .skill__percent {
     float: right;
     font-size: 14px;
   }
-  
-  .progress-item__bar {
-    display: flex;
+
+  .skill__progress {
     height: 7px;
     margin-bottom: 0;
     font-size: .75rem;
     line-height: 0;
     border-radius: 15px;
     background-color: #f1f1f1;
-    overflow: hidden;
+    box-shadow: none;
+  }
+  
+  .skill__progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    color: #fff;
+    font-size: 12px;
+    line-height: 7px;
+    text-align: center;
+    border-radius: 15px;
     box-shadow: none;
   }
 }

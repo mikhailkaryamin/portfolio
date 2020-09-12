@@ -1,46 +1,12 @@
 .home {
   position: relative;
+  display: flex;
+  align-items: center;
   height: 100vh;
   min-height: 100vh;
   padding: 0;
   padding-top: 110px;
   background: #000;
-
-
-  .intro {
-    position: relative;
-    z-index: 1;
-    max-width: 540px;
-    margin: auto;
-    text-align: center;
-
-    h1 {
-      color: #fff;
-      font-size: 36px;
-    }
-
-    span {
-      color: #fff;
-      font-size: 16px;
-    }
-  }
-
-  .social-icons {
-
-    .social-icons__item:not(:last-child) {
-      margin-right: 1.5rem;
-    }
-
-    .social-icons__icon {
-      color: #fff;
-      font-size: 21px;
-
-      &:hover {
-        color: #ff6347;
-      }
-    }
-  }
-
 
   .btn-kd {
     position: relative;

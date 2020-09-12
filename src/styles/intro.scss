@@ -1,0 +1,30 @@
+.intro {
+  position: relative;
+  z-index: 1;
+  max-width: 540px;
+  margin: auto;
+  text-align: center;
+
+  .intro__avatar {
+    margin-bottom: 1.5rem;
+  }
+
+  .intro__button {
+    margin-top: 1.5rem;
+  }
+
+  .intro__name {
+    margin-top: 0;
+    margin-bottom: .5rem;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 36px;
+  }
+
+  span {
+    color: #fff;
+    font-size: 16px;
+  }
+}
