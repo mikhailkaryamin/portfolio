@@ -2,17 +2,17 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import TextLoop from 'react-text-loop';
 
-import Socials from './Socials'
+import Avatar from './Avatar';
+import Socials from './Socials';
 
-import avatar from '../assets/icons/avatar.svg';
-
-
+const PREFIX_AVATAR = 'intro';
 
 function Intro () {
   return (
     <div className="intro">
-      <img src={avatar} alt="Mikhail Karyamin" className="intro__avatar" />
 
+      <Avatar prefix={PREFIX_AVATAR}/>
+  
       <h1 className="intro__name">
         Mikhail Karyamin
       </h1>
