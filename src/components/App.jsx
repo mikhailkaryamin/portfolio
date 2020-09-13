@@ -1,7 +1,9 @@
 import React from 'react';
+
+import About from '../sections/About'
 import Header from '../sections/Header'
 import Home from '../sections/Home'
-import About from '../sections/About'
+import Tools from '../sections/Tools'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -12,6 +14,7 @@ function App () {
       <main>
         <Home />
         <About />
+        <Tools />
       </main>
     </>
   )
