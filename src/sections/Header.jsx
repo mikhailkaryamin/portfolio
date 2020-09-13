@@ -24,8 +24,8 @@ function Header() {
               </a>
             </Nav.Item>
             <Nav.Item as="li">
-              <a href="#" className="nav-link">
-                Education
+              <a href="#tools" className="nav-link">
+                Tools
               </a>
             </Nav.Item>
             <Nav.Item as="li">
