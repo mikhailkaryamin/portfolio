@@ -1,10 +1,12 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import Section from '../components/Section';
-import Skill from '../components/Skill'
-import avatar from '../assets/icons/avatar.svg'
 
-const SKILL_DATA = [
+import Avatar from '../components/Avatar';
+import Section from '../components/Section';
+import Skill from '../components/Skill';
+
+const PREFIX_AVATAR = 'about';
+const SKILLS = [
   {
     title: 'JavaScript',
     percent: 90,
@@ -30,18 +32,16 @@ const SKILL_DATA = [
     percent: 75,
     color: '#ff0dcb',
   }, 
-]
+];
 
 function About () {
   return (
     <Section id="about" title="About me">
-      <Row className="about">
+      <Row>
         <Col md={3}>
-          <div className="about__avatar">
-            <img src={avatar} alt="Mikhail Karyamin" />
-          </div>
+          <Avatar prefix={PREFIX_AVATAR} />
         </Col>
-        <Col md={9} className="about__content-box">
+        <Col md={9} className="about">
           <div className="about__description">
             <Row>
               <Col md={6}>
@@ -52,10 +52,10 @@ function About () {
                 </p>
               </Col>
               <Col md={6}>
-                  {SKILL_DATA.map((bar, i) => {
+                  {SKILLS.map((bar, i) => {
                     return (
                       <Skill
-                        key={`bar.title-${i}`}
+                        key={`${bar.title}-${i}`}
                         backgroundColor={bar.color}
                         percent={bar.percent}
                         title={bar.title}
