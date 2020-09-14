@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
+import SmoothScroll from '../components/SmoothScroll';
+
 import logo from '../assets/icons/logo.svg';
 
 function Header() {
@@ -14,24 +16,24 @@ function Header() {
         <Navbar.Collapse id="navigationBar">
           <Nav className="ml-auto" as="ul">
             <Nav.Item as="li">
-              <a href="#" className="nav-link">
+              <SmoothScroll href="#home" className="nav-link">
                 Home
-              </a>
+              </SmoothScroll>
             </Nav.Item>
             <Nav.Item as="li">
-              <a href="#about" className="nav-link">
+              <SmoothScroll href="#about" className="nav-link">
                 About
-              </a>
+              </SmoothScroll>
             </Nav.Item>
             <Nav.Item as="li">
-              <a href="#tools" className="nav-link">
+              <SmoothScroll href="#tools" className="nav-link">
                 Tools
-              </a>
+              </SmoothScroll>
             </Nav.Item>
             <Nav.Item as="li">
-              <a href="#" className="nav-link">
-                Experience
-              </a>
+              <SmoothScroll href="#certifications" className="nav-link">
+                Cert
+              </SmoothScroll>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
