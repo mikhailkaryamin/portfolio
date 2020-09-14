@@ -88,7 +88,12 @@ function Tools () {
         <Row>
           {TOOLS.map((tool, i) => {
             return (
-              <Col md={4} xs={6} key={`${tool.name}-${i}`}>
+              <Col
+                md={4}
+                xs={6}
+                key={`${tool.name}-${i}`}
+                className="d-flex justify-content-center align-items-center"
+              >
                 <Tool
                   icon={tool.icon}
                   name={tool.name}
