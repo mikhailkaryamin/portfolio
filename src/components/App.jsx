@@ -3,9 +3,8 @@ import React from 'react';
 import About from '../sections/About'
 import Header from '../sections/Header'
 import Home from '../sections/Home'
+import Certifications from '../sections/Certifications';
 import Tools from '../sections/Tools'
-
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App () {
   return(
@@ -14,6 +13,7 @@ function App () {
       <main>
         <Home />
         <About />
+        <Certifications />
         <Tools />
       </main>
     </>
