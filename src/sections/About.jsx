@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
+import Fade from 'react-reveal/Fade';
 
 import Avatar from '../components/Avatar';
 import Section from '../components/Section';
@@ -37,36 +38,38 @@ const SKILLS = [
 function About () {
   return (
     <Section id="about" title="About me">
-      <Row>
-        <Col md={3}>
-          <Avatar prefix={PREFIX_AVATAR} />
-        </Col>
-        <Col md={9} className="about">
-          <div className="about__description">
-            <Row>
-              <Col md={6}>
-                <p>
-                  I am Mikhail Karyamin, a frontend developer with more than 2 years 
-                  of experience in developing, testing and web applications.
-                  I'm looking a good team to work together.
-                </p>
-              </Col>
-              <Col md={6}>
-                  {SKILLS.map((bar, i) => {
-                    return (
-                      <Skill
-                        key={`${bar.title}-${i}`}
-                        backgroundColor={bar.color}
-                        percent={bar.percent}
-                        title={bar.title}
-                      />
-                    )
-                  })}
-              </Col>
-            </Row>
-          </div>
-        </Col>
-      </Row>
+      <Fade bottom>
+        <Row>
+          <Col md={3}>
+            <Avatar prefix={PREFIX_AVATAR} />
+          </Col>
+          <Col md={9} className="about">
+            <div className="about__description">
+              <Row>
+                <Col md={6}>
+                  <p>
+                    I am Mikhail Karyamin, a frontend developer with more than 2 years 
+                    of experience in developing, testing and web applications.
+                    I'm looking a good team to work together.
+                  </p>
+                </Col>
+                <Col md={6}>
+                    {SKILLS.map((bar, i) => {
+                      return (
+                        <Skill
+                          key={`${bar.title}-${i}`}
+                          backgroundColor={bar.color}
+                          percent={bar.percent}
+                          title={bar.title}
+                        />
+                      )
+                    })}
+                </Col>
+              </Row>
+            </div>
+          </Col>
+        </Row>
+      </Fade>
     </Section>
   )
 }
