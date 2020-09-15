@@ -7,6 +7,9 @@ import Particles from '../components/Particles';
 function Home () {
   return (
     <section id="home" className="home">
+      <h1 className="visually-hidden">
+        Portfolio Karyamin Mikhail
+      </h1>
       <Particles />
       <Container>
       <Intro />
