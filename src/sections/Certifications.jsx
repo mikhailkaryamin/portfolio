@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Row, } from 'react-bootstrap';
 
-import Card from '../components/Card';
+import CardCertificate from '../components/CardCertificate';
 import Section from '../components/Section';
 
 const CERTIFICATIONS = [
@@ -41,9 +41,9 @@ const CERTIFICATIONS = [
     linkCourse: 'https://htmlacademy.ru/intensive/ecmascript',
   },
   {
-    time: '03.19-05.19',
+    time: '02.20-04.20',
     title: 'JavaScript, lvl 3',
-    description: 'React',
+    description: 'React, Redux',
     linkCert: 'https://assets.htmlacademy.ru/certificates/intensive/139/959581.pdf',
     linkCourse: 'https://htmlacademy.ru/intensive/react',
   },
@@ -66,11 +66,13 @@ function Certifications () {
 
             return (
               <Col
+                lg={4}
                 md={6}
                 xs={12}
                 className="mb-4"
+                key={`${cert.title}-${i}`}
               >
-                <Card
+                <CardCertificate
                   time={time}
                   title={title}
                   description={description}
