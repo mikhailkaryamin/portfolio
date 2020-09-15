@@ -16,7 +16,7 @@ function ProgressBar ({backgroundColor, title, percent}) {
     <div className="skill">
       <VisibilitySensor onChange={onChange}>
         <div className="skill__info">
-          <h3 className="skill__headline">
+          <h3 className="skill__title">
             {title}
           </h3>
           <span className="skill__percent">
