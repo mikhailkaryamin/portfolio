@@ -26,13 +26,18 @@ function Header() {
               </SmoothScroll>
             </Nav.Item>
             <Nav.Item as="li">
-              <SmoothScroll href="#tools" className="nav-link">
-                Tools
+              <SmoothScroll href="#certifications" className="nav-link">
+                Cert
               </SmoothScroll>
             </Nav.Item>
             <Nav.Item as="li">
-              <SmoothScroll href="#certifications" className="nav-link">
-                Cert
+              <SmoothScroll href="#experience" className="nav-link">
+                Experience
+              </SmoothScroll>
+            </Nav.Item>
+            <Nav.Item as="li">
+              <SmoothScroll href="#tools" className="nav-link">
+                Tools
               </SmoothScroll>
             </Nav.Item>
           </Nav>
