@@ -1,8 +1,9 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 
-import Section from '../components/Section';
+import Button from '../components/Button';
 import CardExperience from '../components/CardExperience';
+import Section from '../components/Section';
 
 import nerdsPreview from '../assets/preview-nerds.jpg';
 import citiesPreview from '../assets/preview-cities.jpg';
@@ -17,7 +18,7 @@ const EXPERIENCE_LIST = [
     description: 'My first project. A landing page for design studio from Krasnodar.',
     technologies: ['HTML', 'CSS', 'JS', 'Fixed'],
     repoLink: 'https://github.com/mikhailkaryamin/nerds',
-    projectLink: '',
+    projectLink: 'https://mikhailkaryamin.github.io/nerds/',
     preview: nerdsPreview,
   },
   {
@@ -25,7 +26,7 @@ const EXPERIENCE_LIST = [
     description: 'Online store of handmade toys.',
     technologies: ['HTML', 'CSS', 'JS', 'Adaptive' ],
     repoLink: 'https://github.com/mikhailkaryamin/mishka',
-    projectLink: '',
+    projectLink: 'https://mikhailkaryamin.github.io/mishka/',
     preview: mishkaPreview,
   },
   {
@@ -41,15 +42,15 @@ const EXPERIENCE_LIST = [
     description: 'Task manager application.',
     technologies: ['JS ES6+'],
     repoLink: 'https://github.com/mikhailkaryamin/tasks-manager',
-    projectLink: '',
+    projectLink: 'https://mikhailkaryamin.github.io/tasks-manager/',
     preview: taskmanagerPreview,
   },
   {
     title: 'Six cities',
-    description: 'Application for finding housing.',
+    description: 'Six cities is an online travel agency for lodging reservations.',
     technologies: ['React', 'Redux', 'TypeScript'],
     repoLink: 'https://github.com/mikhailkaryamin/959581-six-cities-3',
-    projectLink: '',
+    projectLink: 'https://mikhailkaryamin.github.io/959581-six-cities-3/',
     preview: citiesPreview,
   },
   {
@@ -60,7 +61,13 @@ const EXPERIENCE_LIST = [
     projectLink: '',
     preview: wtwPreview,
   }
-]
+];
+
+const ButtonShowMore = {
+  HREF: 'https://github.com/mikhailkaryamin',
+  PREFIX: 'button--show-more',
+  TITLE: 'See more on Github',
+};
 
 function Experience () {
   return (
@@ -93,6 +100,17 @@ function Experience () {
             </Col>
           )
         })}
+      </Row>
+      <Row>
+        <Col
+          xs={12}
+        >
+          <Button
+            href={ButtonShowMore.HREF}
+            prefix={ButtonShowMore.PREFIX}
+            title={ButtonShowMore.TITLE}
+          />
+        </Col>
       </Row>
     </Section>
   )
