@@ -47,7 +47,7 @@ const EXPERIENCE_LIST = [
   },
   {
     title: 'Six cities',
-    description: 'Six cities is an online travel agency for lodging reservations.',
+    description: 'My first React project. Six cities is an online travel agency for lodging reservations.',
     technologies: ['React', 'Redux', 'TypeScript'],
     repoLink: 'https://github.com/mikhailkaryamin/959581-six-cities-3',
     projectLink: 'https://mikhailkaryamin.github.io/959581-six-cities-3/',
@@ -58,7 +58,7 @@ const EXPERIENCE_LIST = [
     description: 'Online cinema.',
     technologies: ['React', 'Redux', 'TypeScript'],
     repoLink: 'https://github.com/mikhailkaryamin/what-to-watch',
-    projectLink: '',
+    projectLink: 'https://mikhailkaryamin.github.io/what-to-watch/',
     preview: wtwPreview,
   }
 ];
