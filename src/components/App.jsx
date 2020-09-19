@@ -1,6 +1,7 @@
 import React from 'react';
 
 import About from '../sections/About';
+import Contact from '../sections/Contact'
 import Experience from '../sections/Experience';
 import Header from '../sections/Header';
 import Home from '../sections/Home';
@@ -17,6 +18,7 @@ function App () {
         <Certifications />
         <Experience />
         <Tools />
+        <Contact />
       </main>
     </>
   )
