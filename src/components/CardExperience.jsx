@@ -17,7 +17,10 @@ function CardExperience ({ title, description, repoLink, projectLink, preview, t
         <ul className="card-experience__technologies">
           {technologies.map((technology, i) => {
             return (
-              <li className="card-experience__technology">
+              <li
+                key={`${technology}-${i}`}
+                className="card-experience__technology"
+              >
                 {technology}
               </li>
             )
