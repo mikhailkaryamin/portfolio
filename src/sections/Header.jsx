@@ -40,6 +40,11 @@ function Header() {
                 Tools
               </SmoothScroll>
             </Nav.Item>
+            <Nav.Item as="li">
+              <SmoothScroll href="#contact" className="nav-link">
+                Contact
+              </SmoothScroll>
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
         </Navbar>
