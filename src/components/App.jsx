@@ -3,6 +3,7 @@ import React from 'react';
 import About from '../sections/About';
 import Contact from '../sections/Contact'
 import Experience from '../sections/Experience';
+import Footer from '../sections/Footer';
 import Header from '../sections/Header';
 import Home from '../sections/Home';
 import Certifications from '../sections/Certifications';
@@ -19,6 +20,7 @@ function App () {
         <Experience />
         <Tools />
         <Contact />
+        <Footer />
       </main>
     </>
   )
