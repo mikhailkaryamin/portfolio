@@ -1,23 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Row, Col, Form } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
 
+import PopupMessage from '../components/PopupMessage';
 import Section from '../components/Section';
 
+import { PopupMessage as Message} from '../consts';
+
 function Contact () {
+  const [showPopup, setShowPopup] = useState(false);
+  const [dataPopup, setDataPopup] = useState({});
+
   function sendMail(e) {
     e.preventDefault();
+
+
     emailjs.sendForm('service_d9l3j4i', 'template_1cqv5dk', e.target, 'user_z0Ocda3PgJLn2z5fL9wSd')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
+      .then(() => {
+        setDataPopup(Message.SUCCESS);
+        setShowPopup(true);
+      }, () => {
+        setDataPopup(Message.ERROR);
+        setShowPopup(true);
       });
   }
 
   return (
     <Section id="contact" title="Get In Touch">
       <Row>
+
+        {showPopup && (
+          <PopupMessage data={dataPopup} handleMessageClose={setShowPopup} />
+        )}
+
         <Col md={4}>
           <div className="contact-info">
             <h3>Would you like to work with me? Awesome!</h3>
@@ -44,7 +59,8 @@ function Contact () {
               <Col md={6}>
                 <Form.Group controlId="inputEmail">
                   <Form.Control
-                    required type="email"
+                    required
+                    type="email"
                     className="input"
                     placeholder="Email address"
                     name="email"
