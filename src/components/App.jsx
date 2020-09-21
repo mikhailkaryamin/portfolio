@@ -20,8 +20,8 @@ function App () {
         <Experience />
         <Tools />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
     </>
   )
 }
