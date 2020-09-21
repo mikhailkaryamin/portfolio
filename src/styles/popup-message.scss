@@ -1,0 +1,54 @@
+.popup-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  width: 11rem;
+  height: 4rem;
+  padding-top: 1.2rem;
+  text-align: center;
+  border-radius: 1.5rem;
+
+  &--success {
+    background-color: #ff6347;
+  }
+
+  &--error {
+    background-color: #f00;
+  }
+
+  .popup-message__button {
+    position: absolute;
+    top: .5rem;
+    right: .7rem;
+    width: .9rem;
+    height: .9rem;
+    padding: 0;
+    border: hidden;
+    background: transparent;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      transform: rotate(45deg);
+      width: .2rem;
+      height: 1rem;
+      background-color: #fff;
+    }
+  
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      transform: rotate(-45deg);
+      width: .2rem;
+      height: 1rem;
+      background-color: #fff;
+    }
+  }
+
+  .popup-message__text {
+    color: #fff;
+  }
+}
