@@ -9,7 +9,7 @@ function Header() {
     <header className="header fixed-top">
       <Container>
         <Navbar expand="lg" variant="dark">
-          <Navbar.Brand href="#">
+          <Navbar.Brand href="#home">
             <img src={logo} alt="Mikhail Karyamin" />
           </Navbar.Brand>
         <Navbar.Toggle aria-controls="navigationBar" />
