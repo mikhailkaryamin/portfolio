@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
 import TextLoop from 'react-text-loop';
+import SmoothScroll from '../components/SmoothScroll';
 
 import Avatar from './Avatar';
 import Socials from './Socials';
@@ -30,7 +30,9 @@ function Intro () {
       <Socials />
 
       <div className="intro__button">
-          <Button variant="kd">Contact me</Button>
+        <SmoothScroll href="#contact" className="button button--intro">
+          Contact me
+        </SmoothScroll>
       </div>
     </div>
   )
