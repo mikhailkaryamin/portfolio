@@ -7,7 +7,7 @@
   text-align: center;
   border: hidden;
   border-radius: 1.5rem;
-  background-color: #ff6347;
+  background-color: $color-tomato;
   transition: .3s;
 
   &:hover,
@@ -15,6 +15,10 @@
     transform: scale(.9);
     color: #fff;
     text-decoration: none;
+  }
+
+  &--intro {
+    padding: 8px 25px;
   }
 
   &--show-more {

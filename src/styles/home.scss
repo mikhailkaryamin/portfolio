@@ -7,23 +7,4 @@
   padding: 0;
   padding-top: 110px;
   background: #000;
-
-  .btn-kd {
-    position: relative;
-    transform: perspective(1px) translateZ(0);
-    display: inline-block;
-    padding: 12px 35px;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 30px;
-    background: #ff6347;
-    transition: .3s;
-    vertical-align: middle;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-
-    &:hover {
-      transform: scale(.9);
-    }
-  }
 }

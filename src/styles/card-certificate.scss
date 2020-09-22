@@ -29,12 +29,12 @@
 
   .card-certificate__time {
     color: #b6b8ce;
-    font-size: 14px;
+    font-size: $small-font-size;
   }
 
   .card-certificate__title {
     margin: 8px 0;
-    font-size: 20px;
+    font-size: $large-font-size;
     font-weight: 700;
   }
 

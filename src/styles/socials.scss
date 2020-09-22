@@ -14,10 +14,10 @@
 
   .socials__icon {
     color: #fff;
-    font-size: 21px;
+    font-size: $large-font-size;
 
     &:hover {
-      color: #ff6347;
+      color: $color-tomato;
     }
   }
 }

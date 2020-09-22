@@ -22,16 +22,16 @@
 
   .nav-link {
     padding: 0;
-    font-size: 16px;
+    font-size: $middle-font-size;
     font-weight: 700;
     cursor: pointer;
 
     &.active {
-      color: #ff6347 !important;
+      color: $color-tomato !important;
     }
 
     &:hover {
-      color: #ff6347 !important;
+      color: $color-tomato !important;
     }
   }
 

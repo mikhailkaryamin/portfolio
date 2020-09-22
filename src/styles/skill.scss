@@ -14,19 +14,19 @@
     float: left;
     margin-top: 0;
     margin-bottom: 1rem;
-    font-size: 16px;
+    font-size: $middle-font-size;
     font-weight: 500;
   }
   
   .skill__percent {
     float: right;
-    font-size: 14px;
+    font-size: $small-font-size;
   }
 
   .skill__progress {
     height: 7px;
     margin-bottom: 0;
-    font-size: .75rem;
+    font-size: $small-font-size;
     line-height: 0;
     border-radius: 15px;
     background-color: #f1f1f1;
@@ -38,7 +38,7 @@
     width: 0;
     height: 100%;
     color: #fff;
-    font-size: 12px;
+    font-size: $small-font-size;
     line-height: 7px;
     text-align: center;
     border-radius: 15px;
