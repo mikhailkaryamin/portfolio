@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import Fade from 'react-reveal/Fade';
 
 function Section ({id, title, className, children}) {
   return (
@@ -12,7 +13,9 @@ function Section ({id, title, className, children}) {
           </h2>
         )}
 
-        {children}
+        <Fade bottom cascade>
+          {children}
+        </Fade>
 
       </Container>
     </section>
