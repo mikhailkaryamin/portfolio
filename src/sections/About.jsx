@@ -1,6 +1,5 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
 
 import Avatar from '../components/Avatar';
 import Section from '../components/Section';
@@ -38,7 +37,6 @@ const SKILLS = [
 function About () {
   return (
     <Section id="about" title="About me">
-      <Fade bottom>
         <Row>
           <Col md={3}>
             <Avatar prefix={PREFIX_AVATAR} />
@@ -69,7 +67,6 @@ function About () {
             </div>
           </Col>
         </Row>
-      </Fade>
     </Section>
   )
 }
