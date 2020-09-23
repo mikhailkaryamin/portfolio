@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { LanguageProvider } from '../containers/Language';
+
 import About from '../sections/About';
 import Contact from '../sections/Contact'
 import Experience from '../sections/Experience';
@@ -11,7 +13,7 @@ import Tools from '../sections/Tools';
 
 function App () {
   return(
-    <>
+    <LanguageProvider>
       <Header />
       <main>
         <Home />
@@ -22,7 +24,7 @@ function App () {
         <Contact />
       </main>
       <Footer />
-    </>
+    </LanguageProvider>
   )
 }
 
