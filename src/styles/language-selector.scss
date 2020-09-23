@@ -1,0 +1,23 @@
+.language-selector {
+  position: relative;
+  padding: 0;
+  padding-left: 30px;
+  color: #fff;
+  font-size: $middle-font-size;
+  font-weight: 700;
+  border: hidden;
+  background-color: transparent;
+  
+  &.active {
+    color: $color-tomato;
+  }
+
+  &:hover {
+    color: $color-tomato;
+  }
+
+  svg {
+    position: absolute;
+    left: 5px;
+  }
+}
