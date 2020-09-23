@@ -1,0 +1,70 @@
+{
+  "about": {
+    "description": "Я Карямин Михаил, фронтенд разработчик с более чем двух летним стажем в разработке и тестировании веб приложений. Ищу хорошую команду для совместной работы",
+    "title": "Обо мне"
+  },
+  "cardCertification": {
+    "buttonCert": "Сертификат",
+    "buttonCourse": "Интенсив",
+    "htmlCssLvl1": "Фиксированная верстка",
+    "htmlCssLvl2": "Адаптивная верстка",
+    "jsLvl1": "JavaScript ES5",
+    "frontend": "HTML, CSS, JS",
+    "jsLvl2": "JavaScript, lvl 2",
+    "jsLvl3": "React, Redux"
+  },
+  "cardExperience": {
+    "buttonSourceCode": "Исходный код",
+    "buttonSeeLive": "Смотреть",
+    "nerds": "Мой самый первый проект. Лендинг дизайн студии из Краснодара.",
+    "mishka": "Онлайн магазин игрушек.",
+    "kekstagram": "Небольшой клон инстаграма.",
+    "taskManager": "Менеджер задач.",
+    "sixCities": "Мой первый проект на React. Шесть город - это современный сервис для поиска жилья",
+    "whatToWatch": "Онлайн кинотеатр."
+  },
+  "certifications": {
+    "title": "Сертификаты"
+  },
+  "contact": {
+    "infoHeading": "Вы бы хотели работать со мной? Потрясающе!",
+    "infoEmail": "Не нравятся формы? Отправь мне",
+    "title": "Свазаться со мной",
+    "buttonSendMessage": "Отправить сообщение",
+    "placeHolder": {
+      "yourName": "Ваше имя",
+      "email": "Адрес эл. почты",
+      "subject": "Тема",
+      "message": "Сообщение"
+    }
+  },
+  "experience": {
+    "title": "Проекты",
+    "buttonSeeMore": "Смотреть больше на GitHub"
+  },
+  "footer": {
+    "name": "Карямин Михаил"
+  },
+  "header": {
+    "home": "Главная",
+    "about": "Обо мне",
+    "certs": "Сертификаты",
+    "experience": "Проекты",
+    "tools": "Инструменты",
+    "contact": "Контакты"
+  },
+  "home": {
+    "heading": "Портфолио Михаил Карямин"
+  },
+  "intro": {
+    "heading": "Михаил Карямин",
+    "iAm": "Я",
+    "frontend": "Фронтенд разработчик",
+    "goodMan": "Хороший человек",
+    "enthusiast": "Энтузиаст",
+    "button": "Связаться со мной"
+  },
+  "tools": {
+    "title": "Инструменты"
+  }
+}
