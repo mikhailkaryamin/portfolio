@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
+import { Text } from '../containers/Language';
 
 import Avatar from '../components/Avatar';
 import Section from '../components/Section';
@@ -36,7 +37,7 @@ const SKILLS = [
 
 function About () {
   return (
-    <Section id="about" title="About me">
+    <Section id="about">
         <Row>
           <Col md={3}>
             <Avatar prefix={PREFIX_AVATAR} />
@@ -46,9 +47,7 @@ function About () {
               <Row>
                 <Col md={6}>
                   <p>
-                    I am Mikhail Karyamin, a frontend developer with more than 2 years 
-                    of experience in developing, testing and web applications.
-                    I'm looking a good team to work together.
+                    <Text section="about" value="description" />
                   </p>
                 </Col>
                 <Col md={6}>

@@ -4,8 +4,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   faGraduationCap,
 } from '@fortawesome/free-solid-svg-icons';
+import { Text } from '../containers/Language';
 
-import Button from '../components/Button';
+import ButtonLink from './ButtonLink';
 
 library.add(
   faGraduationCap
@@ -23,20 +24,22 @@ function CardCertificate ({ time, title, description, linkCert, linkCourse }) {
           {title}
         </h3>
         <p>
-          {description}
+          <Text section="cardCertification" value={description} />
         </p>
       </div>
       <ul className="card-certificate__list-links">
         <li className="card-certificate__button">
-          <Button 
-            title='Cert'
+          <ButtonLink
+            section="cardCertification"
+            title="buttonCert"
             href={linkCert}
           />
         </li>
         <li className="card-certificate__button">
-          <Button
-            title='Course'
-            href={linkCert}
+          <ButtonLink
+            section="cardCertification"
+            title="buttonCourse"
+            href={linkCourse}
           />
         </li>
       </ul>

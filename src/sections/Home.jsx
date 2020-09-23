@@ -1,4 +1,5 @@
 import React from 'react';
+import { Text } from '../containers/Language';
 import { Container } from 'react-bootstrap';
 
 import Intro from '../components/Intro'
@@ -8,6 +9,7 @@ function Home () {
   return (
     <section id="home" className="home">
       <h1 className="visually-hidden">
+        <Text section="home" value="heading"/>
         Portfolio Karyamin Mikhail
       </h1>
       <Particles />

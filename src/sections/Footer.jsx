@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import { Text } from '../containers/Language';
 
 function Footer () {
   return (
@@ -7,7 +8,9 @@ function Footer () {
       <div className="footer__bg">
         <Container>
             <div className="copyright">
-              Copyright © 2020 Karyamin Mikhail
+              © 2020
+              {' '}
+              <Text section="footer" value="name" />
             </div>
         </Container>
       </div>

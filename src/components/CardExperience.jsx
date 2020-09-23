@@ -1,5 +1,6 @@
 import React from 'react';
-import Button from '../components/Button';
+
+import ButtonLink from './ButtonLink';
 
 function CardExperience ({ title, description, repoLink, projectLink, preview, technologies }) {
   return (
@@ -29,15 +30,17 @@ function CardExperience ({ title, description, repoLink, projectLink, preview, t
         <ul className="card-experience__list-links">
           {projectLink && (
             <li className="card-experience__button">
-              <Button
-                title='See live'
+              <ButtonLink
+                section="cardExperience"
+                title='buttonSeeLive'
                 href={projectLink}
               />
             </li>
           )}
           <li className="card-experience__button">
-            <Button
-              title='Source code'
+            <ButtonLink
+              section="cardExperience"
+              title='buttonSourceCode'
               href={repoLink}
             />
           </li>

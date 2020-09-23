@@ -1,7 +1,8 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
+import { Text } from '../containers/Language';
 
-import Button from '../components/Button';
+import ButtonLink from '../components/ButtonLink';
 import CardExperience from '../components/CardExperience';
 import Section from '../components/Section';
 
@@ -15,7 +16,7 @@ import wtwPreview from '../assets/preview-wtw.jpg';
 const EXPERIENCE_LIST = [
   {
     title: 'Nerds',
-    description: 'My first project. A landing page for design studio from Krasnodar.',
+    description: <Text section="cardExperience" value="nerds" />,
     technologies: ['HTML', 'CSS', 'JS', 'Fixed'],
     repoLink: 'https://github.com/mikhailkaryamin/nerds',
     projectLink: 'https://mikhailkaryamin.github.io/nerds/',
@@ -23,7 +24,7 @@ const EXPERIENCE_LIST = [
   },
   {
     title: 'Mishka',
-    description: 'Online store of handmade toys.',
+    description: <Text section="cardExperience" value="mishka" />,
     technologies: ['HTML', 'CSS', 'JS', 'Adaptive' ],
     repoLink: 'https://github.com/mikhailkaryamin/mishka',
     projectLink: 'https://mikhailkaryamin.github.io/mishka/',
@@ -31,7 +32,7 @@ const EXPERIENCE_LIST = [
   },
   {
     title: 'Kekstagram',
-    description: 'Little clone instagram.',
+    description: <Text section="cardExperience" value="kekstagram" />,
     technologies: ['JS ES5'],
     repoLink: 'https://github.com/mikhailkaryamin/kekstagram',
     projectLink: '',
@@ -39,7 +40,7 @@ const EXPERIENCE_LIST = [
   },
   {
     title: 'Task manager',
-    description: 'Task manager application.',
+    description: <Text section="cardExperience" value="taskManager" />,
     technologies: ['JS ES6+'],
     repoLink: 'https://github.com/mikhailkaryamin/tasks-manager',
     projectLink: 'https://mikhailkaryamin.github.io/tasks-manager/',
@@ -47,7 +48,7 @@ const EXPERIENCE_LIST = [
   },
   {
     title: 'Six cities',
-    description: 'My first React project. Six cities is an online travel agency for lodging reservations.',
+    description: <Text section="cardExperience" value="sixCities" />,
     technologies: ['React', 'Redux', 'TypeScript'],
     repoLink: 'https://github.com/mikhailkaryamin/959581-six-cities-3',
     projectLink: 'https://mikhailkaryamin.github.io/959581-six-cities-3/',
@@ -55,7 +56,7 @@ const EXPERIENCE_LIST = [
   },
   {
     title: 'What to watch',
-    description: 'Online cinema.',
+    description: <Text section="cardExperience" value="whatToWatch" />,
     technologies: ['React', 'Redux', 'TypeScript'],
     repoLink: 'https://github.com/mikhailkaryamin/what-to-watch',
     projectLink: 'https://mikhailkaryamin.github.io/what-to-watch/',
@@ -65,8 +66,8 @@ const EXPERIENCE_LIST = [
 
 const ButtonShowMore = {
   HREF: 'https://github.com/mikhailkaryamin',
-  PREFIX: 'button--show-more',
-  TITLE: 'See more on Github',
+  PREFIX: 'show-more',
+  TITLE: 'buttonSeeMore',
 };
 
 function Experience () {
@@ -105,7 +106,8 @@ function Experience () {
         <Col
           xs={12}
         >
-          <Button
+          <ButtonLink
+            section="experience"
             href={ButtonShowMore.HREF}
             prefix={ButtonShowMore.PREFIX}
             title={ButtonShowMore.TITLE}

@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Row, Col, Form } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
+import { Text } from '../containers/Language';
+
+import { LanguageContext } from '../containers/Language';
 
 import PopupMessage from '../components/PopupMessage';
 import Section from '../components/Section';
@@ -10,10 +13,17 @@ import { PopupMessage as Message} from '../consts';
 function Contact () {
   const [showPopup, setShowPopup] = useState(false);
   const [dataPopup, setDataPopup] = useState({});
+  
+  const ctx = useContext(LanguageContext);
+  const {
+    yourName,
+    email,
+    subject,
+    message,
+  } = ctx.dictionary.contact.placeHolder;
 
   function sendMail(e) {
     e.preventDefault();
-
 
     emailjs.sendForm('service_d9l3j4i', 'template_1cqv5dk', e.target, 'user_z0Ocda3PgJLn2z5fL9wSd')
       .then(() => {
@@ -26,7 +36,7 @@ function Contact () {
   }
 
   return (
-    <Section id="contact" title="Get In Touch">
+    <Section id="contact">
       <Row>
 
         {showPopup && (
@@ -35,9 +45,13 @@ function Contact () {
 
         <Col md={4}>
           <div className="contact-info">
-            <h3>Would you like to work with me? Awesome!</h3>
+            <h3>
+              <Text section="contact" value="infoHeading" />
+            </h3>
             <p>
-                Don't like forms? Send me an <a href="mailto:karyamin.mihail@yandex.ru">email</a>.
+                <Text section="contact" value="infoEmail" />
+                {' '}
+                <a href="mailto:karyamin.mihail@yandex.ru">email</a>.
                 <span role="img" aria-label="wave">👋</span>
               </p>
           </div>
@@ -51,7 +65,7 @@ function Contact () {
                     required
                     type="text"
                     className="input"
-                    placeholder="Your name"
+                    placeholder={yourName}
                     name="from_name"
                   />
                 </Form.Group>
@@ -62,7 +76,7 @@ function Contact () {
                     required
                     type="email"
                     className="input"
-                    placeholder="Email address"
+                    placeholder={email}
                     name="email"
                   />
                 </Form.Group>
@@ -75,7 +89,7 @@ function Contact () {
                     required
                     type="text"
                     className="input"
-                    placeholder="Subject"
+                    placeholder={subject}
                     name="subject"
                   />
                 </Form.Group>
@@ -89,7 +103,7 @@ function Contact () {
                     as="textarea"
                     rows={5}
                     className="input"
-                    placeholder="Message"
+                    placeholder={message}
                     name="message"
                   />
                 </Form.Group>
@@ -98,7 +112,7 @@ function Contact () {
             <Row>
               <Col md={12}>
                 <button className="button" type="submit">
-                  Send message
+                  <Text section="contact" value="buttonSendMessage" />
                 </button>
               </Col>
             </Row>

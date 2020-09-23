@@ -1,6 +1,7 @@
 import React from 'react';
 import TextLoop from 'react-text-loop';
 import SmoothScroll from '../components/SmoothScroll';
+import { Text } from '../containers/Language';
 
 import Avatar from './Avatar';
 import Socials from './Socials';
@@ -13,25 +14,31 @@ function Intro () {
 
       <Avatar prefix={PREFIX_AVATAR}/>
   
-      <h1 className="intro__name">
-        Mikhail Karyamin
-      </h1>
+      <h2 className="intro__name">
+        <Text section="intro" value="heading"/>
+      </h2>
 
-      <span>
-        I'm a
+      <div className="intro__description">
+        <Text section="intro" value="iAm"/>
         {' '}
         <TextLoop springConfig={{ stiffness: 180, damping: 10}} interval={1500}>
-          <span>Front-End developer</span>
-          <span>Good man</span>
-          <span>Enthusiast</span>
+          <span className="intro__item">
+            <Text section="intro" value="frontend"/>
+          </span>
+          <span className="intro__item">
+            <Text section="intro" value="goodMan"/>
+          </span>
+          <span className="intro__item">
+            <Text section="intro" value="enthusiast"/>
+          </span>
         </TextLoop>
-      </span>
+      </div>
 
       <Socials />
 
       <div className="intro__button">
         <SmoothScroll href="#contact" className="button button--intro">
-          Contact me
+          <Text section="intro" value="button"/>
         </SmoothScroll>
       </div>
     </div>
