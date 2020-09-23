@@ -33,6 +33,7 @@
       "display",
       "float",
       "flex-direction",
+      "flex-grow",
       "justify-content",
       "align-items",
       "align-self",
