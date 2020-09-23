@@ -12,14 +12,12 @@
   .intro__name {
     margin-top: 0;
     margin-bottom: .5rem;
-  }
-
-  h1 {
     color: #fff;
     font-size: $title-font-size;
   }
 
-  span {
+  .intro__description,
+  .intro__item {
     color: #fff;
     font-size: $middle-font-size;
   }
