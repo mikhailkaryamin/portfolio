@@ -6,8 +6,8 @@ function CardExperience ({ title, description, repoLink, projectLink, preview, t
   return (
     <div className="card-experience">
       <div className="card-experience__wrapper">
-        <div className="card-experience__image"> 
-          <img src={preview} alt={title} />
+        <div className="card-experience__image">
+          <img src={preview} alt={title} loading="lazy" width="275" height="140" />
         </div>
         <h3 className="card-experience__title">
           {title}
