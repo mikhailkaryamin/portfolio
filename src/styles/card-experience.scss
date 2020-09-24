@@ -1,13 +1,13 @@
 .card-experience {
   position: relative;
   display: flex;
+  flex-grow: 1;
   min-height: 310px;
   padding: 30px;
   border-radius: 20px;
   background-color: #fff;
   overflow: hidden;
   box-shadow: 0 5px 20px 0 rgba(69,67,96,.1);
-  flex-grow: 1;
 
   .card-experience__wrapper {
     display: flex;
@@ -30,6 +30,7 @@
 
     img {
       width: 100%;
+      height: 100%;
     }
   }
 

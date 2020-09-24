@@ -10,8 +10,7 @@
   background-color: $color-tomato;
   transition: .3s;
 
-  &:hover,
-  &:focus {
+  &:hover {
     transform: scale(.9);
     color: #fff;
     text-decoration: none;
@@ -25,8 +24,7 @@
     width: 100%;
     padding: 12px 15px;
 
-    &:hover,
-    &:focus {
+    &:hover {
       transform: scale(.97);
     }
   }
