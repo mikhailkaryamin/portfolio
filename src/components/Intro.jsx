@@ -1,6 +1,5 @@
 import React from 'react';
 import TextLoop from 'react-text-loop';
-import SmoothScroll from '../components/SmoothScroll';
 import { Text } from '../containers/Language';
 
 import Avatar from './Avatar';
@@ -37,9 +36,13 @@ function Intro () {
       <Socials />
 
       <div className="intro__button">
-        <SmoothScroll href="#contact" className="button button--intro">
-          <Text section="intro" value="button"/>
-        </SmoothScroll>
+      <a
+        className="button button--intro" 
+        href="https://mikhailkaryamin.ru/%D0%A0%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5.pdf"
+        download
+      >
+        <Text section={`intro`} value={`button`} />
+      </a>
       </div>
     </div>
   )
