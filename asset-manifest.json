@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7147f43f.chunk.css",
+    "main.js": "/static/js/main.853bfc50.chunk.js",
+    "main.js.map": "/static/js/main.853bfc50.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.5c3d1e76.chunk.js": "/static/js/2.5c3d1e76.chunk.js",
+    "static/js/2.5c3d1e76.chunk.js.map": "/static/js/2.5c3d1e76.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.03648f6f6b7b96a57a685a4cd03c2f4b.js": "/precache-manifest.03648f6f6b7b96a57a685a4cd03c2f4b.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.7147f43f.chunk.css.map": "/static/css/main.7147f43f.chunk.css.map",
+    "static/js/2.5c3d1e76.chunk.js.LICENSE.txt": "/static/js/2.5c3d1e76.chunk.js.LICENSE.txt",
+    "static/media/avatar.svg": "/static/media/avatar.108cf1a3.svg",
+    "static/media/bash.svg": "/static/media/bash.36d32a97.svg",
+    "static/media/github.svg": "/static/media/github.f2f9d8bb.svg",
+    "static/media/jest.svg": "/static/media/jest.96e51d23.svg",
+    "static/media/languages.1968c5d9.svg": "/static/media/languages.1968c5d9.svg",
+    "static/media/logo.svg": "/static/media/logo.abd5c07f.svg",
+    "static/media/photoshop.svg": "/static/media/photoshop.0a4e6ba6.svg",
+    "static/media/preview-cities.jpg": "/static/media/preview-cities.2f3d9107.jpg",
+    "static/media/preview-kekstagram.jpg": "/static/media/preview-kekstagram.fe50db47.jpg",
+    "static/media/preview-mishka.jpg": "/static/media/preview-mishka.fbed5c10.jpg",
+    "static/media/preview-nerds.jpg": "/static/media/preview-nerds.80aec3e4.jpg",
+    "static/media/preview-taskmanager.jpg": "/static/media/preview-taskmanager.f5652896.jpg",
+    "static/media/preview-wtw.jpg": "/static/media/preview-wtw.7d889a66.jpg",
+    "static/media/redux.svg": "/static/media/redux.a96cd8f3.svg",
+    "static/media/typescript.svg": "/static/media/typescript.c7df2822.svg",
+    "static/media/webpack.svg": "/static/media/webpack.37f3db37.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.19ccc7f6.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.5c3d1e76.chunk.js",
+    "static/css/main.7147f43f.chunk.css",
+    "static/js/main.853bfc50.chunk.js"
+  ]
+}
