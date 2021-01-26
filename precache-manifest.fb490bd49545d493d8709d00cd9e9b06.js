@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d79686aa898d0aa0df3d33201bd3e0fd",
+    "revision": "b2d0b8671fe2799f385dde6b3ae217a1",
     "url": "/index.html"
   },
   {
-    "revision": "6c9d78600e06106f10b5",
-    "url": "/static/css/2.d9ad5f5c.chunk.css"
+    "revision": "03106e6265acf1040ceb",
+    "url": "/static/css/2.69233f45.chunk.css"
   },
   {
-    "revision": "68606a999e0902c57f86",
+    "revision": "13800cfc0ef498771a9f",
     "url": "/static/css/main.7147f43f.chunk.css"
   },
   {
-    "revision": "6c9d78600e06106f10b5",
-    "url": "/static/js/2.5c3d1e76.chunk.js"
+    "revision": "03106e6265acf1040ceb",
+    "url": "/static/js/2.0ef4c85c.chunk.js"
   },
   {
-    "revision": "d8d5205a705bc8a565fce90323ae5387",
-    "url": "/static/js/2.5c3d1e76.chunk.js.LICENSE.txt"
+    "revision": "d054c4545a047b22aef006c10e69bb50",
+    "url": "/static/js/2.0ef4c85c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "68606a999e0902c57f86",
-    "url": "/static/js/main.853bfc50.chunk.js"
+    "revision": "13800cfc0ef498771a9f",
+    "url": "/static/js/main.87c1d9fb.chunk.js"
   },
   {
     "revision": "4f2b1704eab49d50853b",
@@ -56,28 +56,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/photoshop.0a4e6ba6.svg"
   },
   {
-    "revision": "2f3d910795a9acbf95f7d9651178ada9",
-    "url": "/static/media/preview-cities.2f3d9107.jpg"
+    "revision": "70a4bff1bc96e7bdcb8b1e923ef6668a",
+    "url": "/static/media/preview-count-day.70a4bff1.jpg"
   },
   {
-    "revision": "fe50db47d8e6ac9fc063b0a3d4fc0cef",
-    "url": "/static/media/preview-kekstagram.fe50db47.jpg"
+    "revision": "287e9cd5cdf6d455ef94c0cf6d36a5d9",
+    "url": "/static/media/preview-mishka.287e9cd5.jpg"
   },
   {
-    "revision": "fbed5c102cdfc1ea718a2e7774a6feb5",
-    "url": "/static/media/preview-mishka.fbed5c10.jpg"
+    "revision": "c5fc2abc5a569b3909c2f444fa223616",
+    "url": "/static/media/preview-picture-match.c5fc2abc.jpg"
   },
   {
-    "revision": "80aec3e4a14ff8d5976dea6e31f16d8e",
-    "url": "/static/media/preview-nerds.80aec3e4.jpg"
-  },
-  {
-    "revision": "f5652896c52ec8b24a2bc31b48a61933",
-    "url": "/static/media/preview-taskmanager.f5652896.jpg"
-  },
-  {
-    "revision": "7d889a66cd6b353bca1a3a3a9b8bbab9",
-    "url": "/static/media/preview-wtw.7d889a66.jpg"
+    "revision": "9017a7b31b4bd2ae3950da8f32c28d8c",
+    "url": "/static/media/preview-pink.9017a7b3.jpg"
   },
   {
     "revision": "a96cd8f37c8a9c48b3d74c8acd5ab655",
