@@ -1,6 +1,6 @@
 {
   "about": {
-    "description": "I am Mikhail Karyamin, a frontend developer with more than 2 years of experience in developing and testing web applications. I'm looking a good team to work together.",
+    "description": "I am Mikhail Karyamin, a frontend developer with more than 2 years of experience in developing and testing web applications.",
     "title": "About me"
   },
   "cardCertification": {
@@ -16,12 +16,10 @@
   "cardExperience": {
     "buttonSourceCode": "Source code",
     "buttonSeeLive": "See live",
-    "nerds": "My first project. A landing page for design studio from Krasnodar.",
     "mishka": "Online store of handmade toys.",
-    "kekstagram": "Little clone instagram.",
-    "taskManager": "Task manager application.",
-    "sixCities": "My first React project. Six cities is an online travel agency for lodging reservations.",
-    "whatToWatch": "Online cinema."
+    "pictureMatch": "You need found two same picture.",
+    "countDay": "App for Android, count days/week/month/year.",
+    "pink": "Photo editor."
   },
   "certifications": {
     "title": "Certifications"
