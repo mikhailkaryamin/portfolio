@@ -6,7 +6,7 @@ import { LanguageContext } from '../containers/Language';
 import {ReactComponent as LangIcon} from '../assets/icons/languages.svg'
 
 function LanguageSelector() {
-  const { userLanguage, changeUserLanguage} = useContext(LanguageContext);
+  const { userLanguage, changeUserLanguage } = useContext(LanguageContext);
   const [nextLang, changeNextLang] = useState(userLanguage);
 
   const currentLang = nextLang === 'ru' ? 'en': 'ru';
